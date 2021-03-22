@@ -2,6 +2,11 @@
 
 List of email spy pixels blocked by [Simplify Gmail](https://simpl.fyi)
 
+### How to use
+
+- Include `simplify-tracker-blocklist.js` in your project
+- Test if a url is in the list with `isEmailTracker(url)` – returns `true|false`
+
 ### Products and services that use the Simplify Tracker Blocklist:
 
 - [Simplify](https://simpl.fyi)
