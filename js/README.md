@@ -1,3 +1,5 @@
+### Usage
+
 - Include `simplify-tracker-blocklist.js` in your project
 - Test if a url is in the list with `isEmailTracker(url)` – returns `true|false`
 
