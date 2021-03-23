@@ -10,6 +10,7 @@ List of email spy pixels blocked by [Simplify Gmail](https://simpl.fyi)
 ### Products and services that use the Simplify Tracker Blocklist:
 
 - [Simplify](https://simpl.fyi)
+- [MailTrackerBlocker](https://apparition47.github.io/MailTrackerBlocker/)
 
 ### Contributing - Pull Requests
 
