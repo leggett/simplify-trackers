@@ -21,7 +21,7 @@ The program uses a file called
 Trackers.rb
 ```
 
-which is created from `../simplify-tracker-blocker.js` using the _awk(1)_
+which is created from `../js/simplify-tracker-blocker.js` using the _awk(1)_
 script:
 
 ```
@@ -46,10 +46,6 @@ The external gem requirements are few:
 - `mail` -- see https://rubygems.org/gems/mail
 - `nokogiri` see https://rubygems.org/gems/mail
 
-This code is freely given and is covered under the the license established by
-(@leggett)[https://github.com/leggett]. There is no support for this code expressed
-or implied. Please do not contact me about it.
-
 All the files are liberally-commented.
 
 For Ruby purists:
@@ -61,5 +57,6 @@ For Ruby purists:
 
 ### Credits
 
-- Simplify Email Tracker Blocker by [@leggett](https://github.com/leggett)
-- Ruby port by [@caponecicero](https://github.com/caponecicero)
+This code is freely given and is covered under the the license established by
+(@leggett)[https://github.com/leggett]. Ruby port by [@caponecicero](https://github.com/caponecicero).
+There is no support for this code expressed or implied. Please do not contact me about it.
