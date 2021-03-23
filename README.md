@@ -11,6 +11,7 @@ List of email spy pixels blocked by [Simplify Gmail](https://simpl.fyi)
 
 - [Simplify](https://simpl.fyi)
 - [MailTrackerBlocker](https://apparition47.github.io/MailTrackerBlocker/)
+- [Twobird](https://www.twobird.com)
 
 ### Contributing - Pull Requests
 
