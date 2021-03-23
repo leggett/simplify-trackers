@@ -63,10 +63,10 @@ class TrackerBlocker
         #   
         #    Traverse each part of the message body...
         #
-		    def traverse
+	def traverse
 		  
-		        # recurse if the body part is has multiple sub-parts...
-		        #
+	    # recurse if the body part is has multiple sub-parts...
+	    #
             if @part.multipart?
             
                 @part.parts.map.each { |p| @part = p; traverse }
