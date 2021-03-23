@@ -3,6 +3,14 @@ from email messages.  It's a simple filter that reads a file containing
 an email message (the path is given on the command line) and writes the
 modified message to STDOUT.
 
+The program removes all `<img>` tags with `src=` attributes that regexes
+given in `../simplify-tracker-blocker.js`.  It also removes and `<img>` tags
+where the values of the `height=` and `width=` attributes are <= 1.
+
+The program keeps a list of all the trackers blocked.  If any trackers are found
+where the values of the `height=` and `width=` attributes are <= 1, those are named 
+**_unknown_** in the list of all trackers blocked.
+
 The program uses a file called
 ```
 Trackers.rb
