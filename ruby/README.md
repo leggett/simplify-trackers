@@ -3,8 +3,12 @@ from email messages.  It's a simple filter that reads a file containing
 an email message (the path is given on the command line) and writes the
 modified message to STDOUT.
 
+This is intended as a demonstration to get you started on your own app,
+not as production code.  It's been tested only on messages that come from
+my personal email.  You'll probably want to test it a lot more...
+
 The program removes all `<img>` tags with `src=` attributes that regexes
-given in `../simplify-tracker-blocker.js`.  It also removes and `<img>` tags
+given in `../simplify-tracker-blocker.js`.  It also removes any `<img>` tags
 where the values of the `height=` and `width=` attributes are <= 1.
 
 The program keeps a list of all the trackers blocked.  If any trackers are found
@@ -45,7 +49,7 @@ All the files are liberally-commented.
 
 For Ruby purists:
 
+- I like whitespace in general.
+
 - I like indentation of 4 spaces instead of the normal two (IMHO, the
 code is easier to read).  If this bothers you...tuff...
-
-- I like whitespace in general.  If this bothers you...tuff...
