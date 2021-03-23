@@ -14,7 +14,7 @@ toRuby.awk
 ```
 as follows:
 ```
-rm Trackers.rb; awk -f toRuby.awk ../../simplify-tracker-blocker.js > Trackers.rb`
+rm Trackers.rb; awk -f toRuby.awk ../simplify-tracker-blocker.js > Trackers.rb`
 ```
 
 The main program is `mtb`;  the tracker blocking object is defined in
