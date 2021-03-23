@@ -1,11 +1,6 @@
-# simplify-trackers
+# Simplify Email Tracker Blocker
 
 List of email spy pixels blocked by [Simplify Gmail](https://simpl.fyi)
-
-### How to use
-
-- Include `simplify-tracker-blocklist.js` in your project
-- Test if a url is in the list with `isEmailTracker(url)` – returns `true|false`
 
 ### Products and services that use the Simplify Tracker Blocklist:
 
@@ -24,17 +19,17 @@ PRs are welcome.
 
 ### Show your support
 
-- I do not ask for donations, all I ask is that you star/share the repo.
+- I do not ask for donations, all I ask is that you block trackers and star/share the repo.
 - Follow me on Twitter [@leggett](https://twitter.com/leggett) for updates.
 - Check out [Simplify](https://simpl.fyi)
 
 ### Disclaimer
 
-- This software is provided for educational purposes only and
-  is provided "AS IS", without warranty of any kind, express or
-  implied, including but not limited to the warranties of merchantability,
-  fitness for a particular purpose and noninfringement. in no event shall the
-  authors or copyright holders be liable for any claim, damages or other
-  liability, whether in an action of contract, tort or otherwise, arising from,
-  out of or in connection with the software or the use or other dealings in the
-  software.
+This software is provided for educational purposes only and
+is provided "AS IS", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and noninfringement. in no event shall the
+authors or copyright holders be liable for any claim, damages or other
+liability, whether in an action of contract, tort or otherwise, arising from,
+out of or in connection with the software or the use or other dealings in the
+software.
