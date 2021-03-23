@@ -1,0 +1,31 @@
+#!/usr/bin/env -S ruby
+#
+
+# Ruby version >= 3.0 ONLY!
+#
+require 'nokogiri'      # see https://rubygems.org/gems/nokogiri
+require 'mail'          # see https://rubygems.org/gems/mail
+
+# built-in stuff
+#
+require 'sorted_set'
+require 'json'
+
+# set '.' in the load path
+#
+$LOAD_PATH.unshift "."
+
+require 'TrackerBlocker'
+require 'Trackers'
+
+msg = Mail.read(ARGV[0])  # read the mail file given on the command line
+
+blocker = TrackerBlocker.new(msg)  # create a TrackerBlock object from the message
+
+blocker.block   # deal with the evil!
+
+#puts blocker.tracker.to_a.to_s     # output some debug if you like
+
+puts blocker.message.to_s       # output the modified message to stdout
+
+exit 0
