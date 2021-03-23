@@ -1,19 +1,28 @@
 This directory contains a demonstration program for removing trackers
 from email messages. It's a simple filter that reads a file containing
 an email message (the path is given on the command line) and writes the
-modified message to STDOUT.
+modified message to STDOUT.  If any trackers are blocked, a header called
+```
+X-Trackers-Blocked:
+```
+is added to the resulting message.  The content of the `X-Trackers-Blocked:`
+header is a JSON-formatted array of strings.  Each string is the name of
+a blocked tracker (the names come from the keys of the hash defined in
+`../js/simplify-tracker-blocker.js`).
 
 This is intended as a demonstration to get you started on your own app,
 not as production code. It's been tested only on messages that come from
 my personal email. You'll probably want to test it a lot more...
 
-The program removes all `<img>` tags with `src=` attributes that regexes
-given in `../simplify-tracker-blocker.js`. It also removes any `<img>` tags
+The program removes all `<img>` tags with `src=` attributes that match regexes
+given in `../js/simplify-tracker-blocker.js`. It also removes any `<img>` tags
 where the values of the `height=` and `width=` attributes are <= 1.
 
 The program keeps a list of all the trackers blocked. If any trackers are found
 where the values of the `height=` and `width=` attributes are <= 1, those are named
-**_unknown_** in the list of all trackers blocked.
+**_unknown_** in the list of all trackers blocked.  The list is a SortedSet so
+any particular tracker is listed only once even though it may be blocked multiple
+times.
 
 The program uses a file called
 
@@ -31,7 +40,7 @@ toRuby.awk
 as follows:
 
 ```
-rm Trackers.rb; awk -f toRuby.awk ../simplify-tracker-blocker.js > Trackers.rb`
+rm Trackers.rb; awk -f toRuby.awk ../js/simplify-tracker-blocker.js > Trackers.rb`
 ```
 
 The main program is `mtb`; the tracker blocking object is defined in
