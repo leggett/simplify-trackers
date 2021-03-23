@@ -58,5 +58,5 @@ For Ruby purists:
 ### Credits
 
 This code is freely given and is covered under the the license established by
-(@leggett)[https://github.com/leggett]. Ruby port by [@caponecicero](https://github.com/caponecicero).
+[@leggett](https://github.com/leggett). Ruby port by [@caponecicero](https://github.com/caponecicero).
 There is no support for this code expressed or implied. Please do not contact me about it.
