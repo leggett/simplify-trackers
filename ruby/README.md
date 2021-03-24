@@ -48,7 +48,7 @@ of *mawk* is >= 1.3.4.  *mawk* versions prior to 1.3.4 are not POSIX-compliant a
 some issues.  For example, *mawk 1.3.3* will generate strings that sometimes give compile
 warnings when used as follows:
 ```
-   r = Regexp.new(/<mawk-generated string/ix)
+   r = Regexp.new(/<mawk-generated string>/ix)
 ```
 I discovered this quite by accident.  When in doubt, install *gawk*...
 
