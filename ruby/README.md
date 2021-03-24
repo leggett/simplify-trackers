@@ -43,14 +43,14 @@ as follows:
 rm Trackers.rb; awk -f toRuby.awk ../js/simplify-tracker-blocker.js > Trackers.rb`
 ```
 **NOTE:**
-If your Linux system symlinks *mawk* as *awk*, you need to make sure that the version
-of *mawk* is >= 1.3.4.  *mawk* versions prior to 1.3.4 are not POSIX-compliant and have
-some issues.  For example, *mawk 1.3.3* will generate strings that sometimes give compile
-warnings when used as follows:
+If your Linux system symlinks *mawk* as *awk*, you need to install *gawk*.  
+*mawk* has some defects that will cause it to generate strings that will sometimes not
+compile as ruby Regexp's:
 ```
    r = Regexp.new(/<mawk-generated string>/ix)
 ```
-I discovered this quite by accident.  When in doubt, install *gawk*...
+I discovered this quite by accident.  Some versions of *mawk* are not POSIX-compliant
+either.  When in doubt, install *gawk*...
 
 The main program is `mtb`; the tracker blocking object is defined in
 `TrackerBlock.rb`.
