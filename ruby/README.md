@@ -62,7 +62,7 @@ you'll have to adjust some of the gem requirements (labeled **_built in stuff_**
 The external gem requirements are few:
 
 - `mail` -- see https://rubygems.org/gems/mail
-- `nokogiri` see https://rubygems.org/gems/mail
+- `nokogiri` see https://rubygems.org/gems/nokogiri
 
 All the files are liberally-commented.
 
